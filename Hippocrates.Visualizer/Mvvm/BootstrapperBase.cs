@@ -15,7 +15,7 @@ namespace Hippocrates.Visualizer.Mvvm
       // ReSharper disable once PossibleNullReferenceException
       if (autoconfigureWindow)
       {
-        // if the code fails here, the set window has no public constructor with 
+        // if the code fails here, the set window has no public constructor with no parameters. Consider setting autoconfigureWindow to false
         window = typeof(TSTartupWindow).GetConstructor(new Type[] { }).Invoke(null) as TSTartupWindow;
       }
     }

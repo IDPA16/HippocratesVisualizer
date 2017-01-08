@@ -7,9 +7,9 @@ namespace Hippocrates.Visualizer
 {
   public sealed class Bootstrapper : BootstrapperBase<MainView>
   {
-    public Bootstrapper() : base(new DialogProviderService(), false)
+    public Bootstrapper() : base(new DialogProviderService())
     {
-      SetStartupWindow(new MainView() { DataContext = new MainViewModel() });
+      ConfigureStartupWindow(new MainViewModel());
     }
   }
 }
