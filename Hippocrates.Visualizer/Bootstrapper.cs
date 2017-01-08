@@ -1,10 +1,15 @@
-﻿namespace Hippocrates.Visualizer
+﻿using Hippocrates.Visualizer.Dialogs;
+using Hippocrates.Visualizer.Mvvm;
+using Hippocrates.Visualizer.ViewModels;
+using Hippocrates.Visualizer.Views;
+
+namespace Hippocrates.Visualizer
 {
-  public class Bootstrapper
+  public sealed class Bootstrapper : BootstrapperBase<MainView>
   {
-    public void Start()
+    public Bootstrapper() : base(new DialogProviderService(), false)
     {
-      
+      SetStartupWindow(new MainView() { DataContext = new MainViewModel() });
     }
   }
 }
