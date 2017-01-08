@@ -70,7 +70,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Dialogs\DialogProviderService.cs" />
     <Compile Include="Mvvm\Commands\DelegateCommand.cs" />
+    <Compile Include="Mvvm\Interactions\BasicUserInteraction.cs" />
     <Compile Include="Mvvm\Interactions\InteractionRequestAddedEventArgs.cs" />
     <Compile Include="Mvvm\Interactions\UserInteractionRequestedEventArgs.cs" />
     <Compile Include="Mvvm\Interactions\InteractionRequest.cs" />

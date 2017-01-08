@@ -10,7 +10,5 @@ namespace Hippocrates.Visualizer.Mvvm.Interactions
     object Content { get; }
 
     IList<IInteractionOption<IUserInteraction>> InteractionOptions { get; }
-
-    IInteractionOption<IUserInteraction> InteractionResult { get; }
   }
 }
