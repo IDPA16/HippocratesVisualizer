@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Dialogs\DialogProviderService.cs" />
+    <Compile Include="Mvvm\BootstrapperBase.cs" />
     <Compile Include="Mvvm\Commands\DelegateCommand.cs" />
     <Compile Include="Mvvm\Interactions\BasicUserInteraction.cs" />
     <Compile Include="Mvvm\Interactions\InteractionRequestAddedEventArgs.cs" />

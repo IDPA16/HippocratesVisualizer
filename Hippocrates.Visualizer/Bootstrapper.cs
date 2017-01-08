@@ -1,10 +1,10 @@
-﻿using System;
-using System.Globalization;
-
-namespace Hippocrates.Visualizer
+﻿namespace Hippocrates.Visualizer
 {
   public class Bootstrapper
   {
-    
+    public void Start()
+    {
+      
+    }
   }
 }

@@ -21,7 +21,7 @@ namespace Hippocrates.Visualizer.Mvvm.Interactions
     /// <returns>The newly constructed InteractionRequest</returns>
     public static InteractionRequest Register()
     {
-      InteractionRequest request = new InteractionRequest();
+      var request = new InteractionRequest();
       //interactionRequests.Add(request);
       InteractionRequestAdded?.Invoke(null, new InteractionRequestAddedEventArgs(request));
       return request;
@@ -37,18 +37,7 @@ namespace Hippocrates.Visualizer.Mvvm.Interactions
     /// <param name="context">The context for the interaction request.</param>
     public void Raise(IUserInteraction context)
     {
-      Raise(context, i => { });
-    }
-
-    /// <summary>Fires the Raised event.</summary>
-    /// <param name="context">The context for the interaction request.</param>
-    /// <param name="callback">The callback to execute when the interaction is completed.</param>
-    public void Raise(IUserInteraction context, Action<IUserInteraction> callback)
-    {
-      Raised?.Invoke(this, new UserInteractionRequestedEventArgs(context, () =>
-        {
-          callback?.Invoke(context);
-        }));
+      Raised?.Invoke(this, new UserInteractionRequestedEventArgs(context));
     }
 
   }
