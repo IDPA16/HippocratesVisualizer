@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hippocrates.Visualizer"
         xmlns:viewmodels="clr-namespace:Hippocrates.Visualizer.ViewModels"
-        xmlns:mvvm="http://prismlibrary.com/"
         xmlns:controls="clr-namespace:Hippocrates.Visualizer.Controls"
         mc:Ignorable="d"
         Title="MainView" 
