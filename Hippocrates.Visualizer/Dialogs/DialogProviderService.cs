@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Windows;
 using Hippocrates.Visualizer.Mvvm.Interactions;
 using Hippocrates.Visualizer.Mvvm.Interactions.Services;
 

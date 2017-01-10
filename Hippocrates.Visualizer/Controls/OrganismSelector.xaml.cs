@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Hippocrates.Visualizer.Controls
 {
@@ -23,6 +11,33 @@ namespace Hippocrates.Visualizer.Controls
     public OrganismSelector()
     {
       InitializeComponent();
+    }
+
+    public static readonly DependencyProperty SelectedGenerationIndexProperty = DependencyProperty.Register(
+      nameof(SelectedGenerationIndex), typeof(int), typeof(OrganismSelector), new PropertyMetadata(default(int)));
+
+    public int SelectedGenerationIndex
+    {
+      get { return (int) GetValue(SelectedGenerationIndexProperty); }
+      set { SetValue(SelectedGenerationIndexProperty, value); }
+    }
+
+    public static readonly DependencyProperty SelectedSpeciesIndexProperty = DependencyProperty.Register(
+      nameof(SelectedSpeciesIndex), typeof(int), typeof(OrganismSelector), new PropertyMetadata(default(int)));
+
+    public int SelectedSpeciesIndex
+    {
+      get { return (int) GetValue(SelectedSpeciesIndexProperty); }
+      set { SetValue(SelectedSpeciesIndexProperty, value); }
+    }
+
+    public static readonly DependencyProperty SelectedOrganismIndexProperty = DependencyProperty.Register(
+      nameof(SelectedOrganismIndex), typeof(int), typeof(OrganismSelector), new PropertyMetadata(default(int)));
+    
+    public int SelectedOrganismIndex
+    {
+      get { return (int) GetValue(SelectedOrganismIndexProperty); }
+      set { SetValue(SelectedOrganismIndexProperty, value); }
     }
   }
 }

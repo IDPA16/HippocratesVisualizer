@@ -7,13 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
 
-    <Grid.RowDefinitions>
-        <RowDefinition Height="30" />
-        <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition Height="30" />
+    <RowDefinition Height="*" />
+  </Grid.RowDefinitions>
 
-    <Label Grid.Row="0" Content="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType=local:TitledListView}}" />
-    
-    <ListBox Grid.Row="1" ItemsSource="{Binding ListContent, RelativeSource={RelativeSource FindAncestor, AncestorType=local:TitledListView}}" />
+  <Label Grid.Row="0" Content="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType=local:TitledListView}}" />
+
+  <ListBox Grid.Row="1" ItemsSource="{Binding ListContent, RelativeSource={RelativeSource FindAncestor, AncestorType=local:TitledListView}}" SelectedIndex="{Binding SelectedItem, RelativeSource={RelativeSource FindAncestor, AncestorType=local:TitledListView}}" />
 
 </Grid>

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Hippocrates.Visualizer.Mvvm.Interactions
+﻿namespace Hippocrates.Visualizer.Mvvm.Interactions
 {
   public class UserInteractionRequestedEventArgs
   {
